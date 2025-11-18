@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="monetag" content="076fa8b5b29349a3669711942e992acc">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASSCE 2025 - Economics Questions & Answers</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CORE VARIABLES (ECONOMICS THEME: Navy/Bronze) --- */
+        :root {
+            --bg-dark: #0f172a;      /* Slate 950 */
+            --bg-card: #1e293b;      /* Slate 800 */
+            --bg-header: #020617;    /* Slate 950 Darker */
+            --accent-gold: #d97706;  /* Bronze 600 */
+            --accent-light: #fbbf24; /* Amber 400 */
+            --accent-blue: #38bdf8;  /* Sky 400 */
+            --text-main: #f8fafc;    
+            --text-muted: #94a3b8;   
+            --border-color: #334155; 
+            --whatsapp: #25D366;
+            --telegram: #0088cc;
+        }
+
+        /* --- RESET & BASE STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: radial-gradient(circle at top center, #1e293b 0%, #0f172a 60%);
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: rgba(2, 6, 23, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; }
+        .logo-area span { color: var(--accent-gold); }
+
+        .badge-date {
+            background: rgba(217, 119, 6, 0.1);
+            color: var(--accent-light);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding: 3rem 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #fdba74);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+        /* --- NEW COMPACT SHARE UI --- */
+        .share-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .share-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .share-label {
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.2s, opacity 0.2s;
+            text-decoration: none;
+        }
+
+        .social-link:hover { transform: scale(1.1); }
+        .social-wa { background-color: var(--whatsapp); box-shadow: 0 0 10px rgba(37, 211, 102, 0.3); }
+        .social-tg { background-color: var(--telegram); box-shadow: 0 0 10px rgba(0, 136, 204, 0.3); }
+
+        .share-stats {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .stat-num { color: var(--accent-light); font-weight: 700; font-family: 'Roboto Mono', monospace; }
+
+        /* --- CONTENT STYLES --- */
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .question-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .question-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--accent-gold);
+        }
+
+        .q-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 1rem; padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .q-title {
+            font-size: 1.1rem; font-weight: 700; color: var(--accent-light);
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+
+        .q-content {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.2rem; color: #e2e8f0;
+            white-space: pre-wrap; line-height: 1.6;
+        }
+
+        /* Obj Grid */
+        .obj-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 0.5rem;
+        }
+        .obj-item {
+            background: rgba(0,0,0,0.2);
+            padding: 0.5rem;
+            text-align: center;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .obj-num { color: var(--text-muted); font-size: 0.7rem; display: block; margin-bottom: 2px;}
+        .obj-ans { color: var(--accent-blue); font-weight: bold; }
+
+        /* Footer */
+        footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem; background: var(--bg-header); }
+        
+        /* Highlight spans */
+        .hl { color: var(--accent-blue); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>WASSCE <span>2025</span></h1>
+        </div>
+        <div class="badge-date">
+            Available Now
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Economics</h2>
+        <p>Private Candidate Series - Questions & Answers</p>
+
+        <!-- NEW COMPACT SHARE UI -->
+        <div class="share-container">
+            <div class="share-row">
+                <span class="share-label">Share Solutions:</span>
+                <a href="https://wa.me/?text=Hurry%20up%20dont%20pay%20for%202025%20NOV-DEC%20G.C.E%20Economics%20Questions%20get%20it%20for%20free.%20All%20answers%20are%20give%20base%20on%20WAEC%20Marking%20Sheme%20Click%20her%20to%20view%20the%20Answers%20%3D%3E%20https://chemistry-2025-nov-dec-gcep-papers.vercel.app/" class="social-link social-wa" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/share/url?url=https://chemistry-2025-nov-dec-gcep-papers.vercel.app/&text=Hurry%20up%20dont%20pay%20for%202025%20NOV-DEC%20G.C.E%20Economics%20Questions%20get%20it%20for%20free.%20All%20answers%20are%20give%20base%20on%20WAEC%20Marking%20Sheme%20Click%20her%20to%20view%20the%20Answers" class="social-link social-tg" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+            <div class="share-stats">
+                <i class="fas fa-users"></i>
+                <span class="stat-num" id="share-count">4,500</span> Shares
+            </div>
+        </div>
+    </section>
+
+    <main class="content-container">
+
+        <!-- THEORY SECTION -->
+        <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">Theory Section</h3>
+
+        <!-- Question 1 (From Previous) -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 1</div></div>
+            <div class="q-content">
+(a) 
+Total product = Labour × Average product
+   P = 4 × 18.4 = <span class="hl">73.6 bags</span>
+
+Average product = Total product / Labour
+   Q = 97.6 / 9 = <span class="hl">10.8 bags</span>
+
+Marginal product = Δ Total product / Δ Labour
+   R = (103.8 - 96) / (7 - 6) = <span class="hl">7.8</span>
+
+(b)(i) Increasing returns began at the very first unit of labour. i.e. labour = 1
+(b)(ii) Negative returns began at the 9th unit of labour. i.e. labour = 9
+
+(c) The relationship between the Average product and the marginal product is one of direct proportion. An increment in one results in an increment in the other and vice-versa.
+            </div>
+        </div>
+
+        <!-- Question 2 (From Previous) -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 2</div></div>
+            <div class="q-content">
+(a)(i) Variable Costs: Leather, Glue, Nails, Rubber soles, Diesel, Wages
+V.C = 200 + 50 + 20 + 80 + 120 + 250 = <span class="hl">$720.00</span>
+
+(a)(ii) Fixed Costs: Electricity(25) + Telephone(15) + Insurance(5) + Rent(50) + Advert(15) + Salary(350) + Equipment(100) + Tools(60) + Power(250)
+Σ FC = <span class="hl">$870.00</span>
+
+(a)(iii) Total Cost = 720 + 870 = <span class="hl">$1590</span>
+
+(b)(i) Average cost per pair = 1590 / 250 = <span class="hl">$6.36</span>
+(b)(ii) Total Revenue = 250 × 10 = <span class="hl">$2500</span> | Profit = $2500 - 1590 = <span class="hl">$910.00</span>
+
+(c) Since average revenue is greater than average variable cost, the firm should continue production in the short run.
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 3</div></div>
+            <div class="q-content">
+(3a)
+A capitalist economic system is one where private individuals or entities own and control property and the means of production, and where market forces like supply and demand determine prices and resource allocation.
+
+(3b)
+(i) <span class="hl">Economic Freedom and Choice:</span> Capitalism emphasizes freedom for individuals to choose what to consume, produce, and invest in.
+(ii) <span class="hl">Economic Growth and Efficiency:</span> The system encourages competition and self-interest, which can lead to greater innovation, efficiency, and overall economic growth.
+(iii) <span class="hl">Limited Government Intervention:</span> Capitalism typically involves a limited role for the government, primarily to protect private property rights.
+
+(3c)
+(i) <span class="hl">Addressing Inequality:</span> Pure capitalism can lead to significant wealth concentration. A mixed economy uses government policies to redistribute wealth.
+(ii) <span class="hl">Providing Public Goods:</span> A mixed economy allows for government intervention to provide essential services and protect consumers/environment.
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 4</div></div>
+            <div class="q-content">
+(4a)
+<span class="hl">Hoarding</span> is the practice of accumulating and storing large quantities of goods to create artificial scarcity. 
+<span class="hl">Rationing</span> is a government-imposed policy of controlling distribution and limiting purchases during shortages.
+
+(4b) Functions of a Wholesaler:
+(i) Buys goods in large quantities directly from manufacturers.
+(ii) Breaks bulk and sells goods in smaller quantities to retailers.
+(iii) Provides storage facilities (warehousing) for goods.
+(iv) Offers transportation services to deliver goods to retailers.
+(v) Provides market information to manufacturers.
+
+(4c) Problems of Distribution:
+(i) <span class="hl">Inadequate Infrastructure:</span> Poor roads and power supply hinder efficient movement.
+(ii) <span class="hl">High Transportation Costs:</span> Inefficient routes and fuel prices increase final product prices.
+(iii) <span class="hl">Inefficient Inventory Management:</span> Inaccurate forecasting leads to overstocking or shortages.
+(iv) <span class="hl">Lack of Supply Chain Visibility:</span> Absence of real-time tracking leads to delays.
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 5</div></div>
+            <div class="q-content">
+(5a) Difference between Food Crop & Cash Crop Farming:
+(i) Food crops are for direct consumption; Cash crops are for sale/export.
+(ii) Food crops feed local population; Cash crops provide raw materials/forex.
+(iii) Food crop farming is often small-scale; Cash crop farming is large-scale/commercial.
+
+(5b) Characteristics of Plantation Agriculture:
+(i) Use of modern machines (tractors, harvesters).
+(ii) Large expanse of land cultivated.
+(iii) High capital investment required.
+(iv) Production on a commercial scale.
+
+(5c) Contribution of Industry to Agriculture:
+(i) Supply of farm inputs/machinery (fertilizers, tractors).
+(ii) Development of storage/preservation tech (silos, cold rooms).
+(iii) Creation of markets for agro-products (raw materials for factories).
+(iv) Employment generation for rural communities.
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 6</div></div>
+            <div class="q-content">
+(6a) Features of Underdeveloped Countries:
+(i) <span class="hl">Low per capita income:</span> Low earnings lead to poverty and limited savings.
+(ii) <span class="hl">High population growth:</span> High birth rates pressure social services.
+(iii) <span class="hl">Heavy dependence on agriculture:</span> Reliance on subsistence farming.
+(iv) <span class="hl">Poor industrial development:</span> Weak industrial sectors and low productivity.
+
+(6b) Ways to Finance Development:
+(i) <span class="hl">Taxation:</span> Direct and indirect taxes.
+(ii) <span class="hl">Foreign loans/grants:</span> Assistance from World Bank, IMF.
+(iii) <span class="hl">Public borrowing:</span> Treasury bills, bonds.
+(iv) <span class="hl">Savings from export earnings:</span> Revenue from oil, cocoa, etc.
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 7</div></div>
+            <div class="q-content">
+(7a) An <span class="hl">economic union</span> is a trade bloc composed of a customs union and a common market.
+
+(7b) World Bank vs IMF:
+(i) <span class="hl">Function:</span> World Bank focuses on long-term development/poverty. IMF focuses on short-term stability/balance of payments.
+(ii) <span class="hl">Target:</span> World Bank lends to developing countries. IMF assists any member in crisis.
+(iii) <span class="hl">Funding:</span> World Bank uses bonds/contributions. IMF uses quotas.
+
+(7c) Functions of IMF:
+(i) Providing financial assistance (loans).
+(ii) Facilitating international trade (exchange stability).
+(iii) Offering policy advice and technical assistance.
+(iv) Monitoring the global economy.
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 8</div></div>
+            <div class="q-content">
+(8a) <span class="hl">Solid mineral resources</span> are naturally occurring inorganic substances found in the earth’s crust (gold, coal, tin) with economic value.
+
+(8b) Benefits:
+(i) Source of revenue and foreign exchange.
+(ii) Industrial development (raw materials).
+(iii) Employment opportunities (mining jobs).
+
+(8c) How to Promote Sector:
+(i) Provision of incentives (tax holidays).
+(ii) Development of infrastructure (power, roads).
+(iii) Favourable policies (laws restricting export of unprocessed minerals).
+            </div>
+        </div>
+
+        <!-- OBJECTIVES SECTION -->
+        <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem; margin-top: 2rem;">Objective Answers</h3>
+        
+        <div class="question-card">
+            <div class="obj-grid">
+                <div class="obj-item"><span class="obj-num">1</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">2</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">3</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">4</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">5</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">6</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">7</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">8</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">9</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">10</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">11</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">12</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">13</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">14</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">15</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">16</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">17</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">18</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">19</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">20</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">21</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">22</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">23</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">24</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">25</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">26</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">27</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">28</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">29</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">30</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">31</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">32</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">33</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">34</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">35</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">36</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">37</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">38</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">39</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">40</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">41</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">42</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">43</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">44</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">45</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">46</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">47</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">48</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">49</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">50</span><span class="obj-ans">B</span></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2025 West African Examinations Council.
+    </footer>
+
+    <script>
+        // --- SHARE COUNTER LOGIC ---
+        const shareCountEl = document.getElementById('share-count');
+        const shareBtns = document.querySelectorAll('.social-link');
+        
+        // Initialize with realistic high number since exam passed
+        let currentShares = localStorage.getItem('econs_shares') 
+                            ? parseInt(localStorage.getItem('econs_shares')) 
+                            : 4500;
+
+        // Update display immediately
+        shareCountEl.innerText = currentShares.toLocaleString();
+
+        // Function to increment
+        function incrementShare() {
+            currentShares++;
+            shareCountEl.innerText = currentShares.toLocaleString();
+            localStorage.setItem('econs_shares', currentShares);
+        }
+
+        // Add click listeners
+        shareBtns.forEach(btn => {
+            btn.addEventListener('click', incrementShare);
+        });
+    </script>
+</body>
+</html>
